@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bansal College</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f9ff;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 3px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+    nav {
+      background: #004080;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .front-image {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .intro h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #004080;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      width: 80%;
+      margin: 0 auto;
+      color: #555;
+    }
+    .gallery {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    section#courses {
+      background-color: #fffae6; /* light yellow highlight */
+      border-left: 8px solid #ffcc00; /* thick left border highlight */
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(255,204,0,0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    section#courses:hover {
+      box-shadow: 0 8px 20px rgba(255,204,0,0.4);
+      background-color: #fff8c4;
+    }
+    footer {
+      text-align: center;
+      background: #003366;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>Bansal Institute Of Engineering And Technology Lucknow</header>
+  <nav>
+    <a href="#home" onclick="scrollToSection('home')">Home</a>
+    <a href="#about" onclick="scrollToSection('about')">About</a>
+    <a href="#courses" onclick="scrollToSection('courses')">Courses</a>
+    <a href="#gallery" onclick="scrollToSection('gallery')">Gallery</a>
+    <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+  </nav>
+  <main>
+    <section id="home" class="intro">
+      <img class="front-image" src="./a.png" alt="Bansal College Front View"/>
+      <h1>Welcome to Bansal Institute</h1>
+      <p><h4>A premier institute committed to excellence in education and fostering innovation and research among students.</p></h4>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p><h4>Bansal Institute is dedicated to providing high quality education with state-of-the-art facilities and experienced faculty. We prepare our students for a successful future in their chosen fields.</p></h4>
+    </section>
+    <section id="courses">
+      <h2>B.Tech Courses</h2>
+      <ul>
+       <h3> <li>Computer Science Engineering</li></h3>
+        <h3><li>CSE Artificial Intelligence and Machine Learning</li></h3>
+        <h3><li>CSE Artificial Intelligence</li></h3>
+        <h3><li>CSE Information Technology</li></h3>
+        <h3><li>Mechanical Engineering</li></h3>
+        <h3><li>Civil Engineering</li></h3>
+        <h3><li>Electrical Engineering</li></h3>
+        <h3><li>Electronics Engineering</li></h3>
+        <h3><li>Biotechnology</li></h3>
+        <h3><li>Business Administration</li></h3>
+        <h3><li>MBA</li></h3>
+      </ul>
+    </section>
+    <section id="gallery" class="gallery">
+      <h2>Gallery</h2>
+      <img src="./c.jpg" alt="Director and Hod AIML" />
+      <img src="./s.jpg" alt="placement" />
+      <img src="./aa.jpg" alt="Students" />
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@bansaliet.in</p>
+      <p>Phone: +91 9554999937, 9554999938</p>
+      <p>Address: NH-24 Sitapur road,Behind Sewa Hospital,Lucknow,Utter Pradesh 226201 India</p>
+      <button onclick="alert('Thank you for reaching out to Bansal College!')">Send Message</button>
+    </section>
+  </main>
+  <footer>&copy; 2025 Bansal College | All rights reserved</footer>
+
+  <script>
+    // JavaScript for smooth scrolling
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
